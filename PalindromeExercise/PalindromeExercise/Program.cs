@@ -1,12 +1,20 @@
 ﻿using System;
-
+using System.Linq;
 namespace PalindromeExercise
 {
-    class Program
+    public class Palindromes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
+
+
+            public bool Palindrome(string p)
+            {
+                string q = new string(p.ToCharArray().Reverse().ToArray());
+                return p == q;
+            }
+
     }
 }
